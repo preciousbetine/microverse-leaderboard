@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Tilt+Neon&display=swap');
+
+$breakpoint-tablet: 768px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tilt Neon', cursive;
+  padding: 50px;
+
+  h1 {
+    font-family: 'Rampart One', cursive;
+    font-size: 40px;
+  }
+}
+
+#leaderboard {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#new-score {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    input {
+      font-weight: bold;
+      padding: 10px;
+      font-size: 18px;
+      border: 3px solid black;
+    }
+
+    button {
+      align-self: flex-start;
+      padding: 10px 20px;
+      background-color: #fff;
+      font-weight: bold;
+      font-size: 15px;
+      box-shadow: 3px 3px black;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+        box-shadow: 3px 3px #fff;
+      }
+    }
+  }
+}
+
+#all-scores {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #fff;
+      font-weight: bold;
+      font-size: 15px;
+      box-shadow: 3px 3px black;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+        box-shadow: 3px 3px #fff;
+      }
+    }
+  }
+}
+
+#scores {
+  list-style: none;
+  border: 3px solid black;
+
+  li {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:nth-child(even) {
+      background-color: #777;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  body {
+    padding: 120px 50px 0 50px;
+    background-color: #dbdbdb;
+
+    h1 {
+      font-size: 35px;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      border: 1px solid black;
+      padding: 10px;
+      box-shadow: 7px 7px black;
+      background-color: #fff;
+    }
+  }
+
+  #leaderboard {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+
+    & > * {
+      width: 50%;
+      max-width: 550px;
+    }
+
+    #all-scores > ul {
+      background-color: #fff;
+    }
+  }
+}
