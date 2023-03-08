@@ -1,6 +1,6 @@
 import './style.scss';
-import { addScore, showScores } from './modules/game';
-import showToast from './modules/toast';
+import { addScore, showScores } from './modules/game.js';
+import showToast from './modules/toast.js';
 
 const refreshButton = document.getElementById('refresh');
 refreshButton.addEventListener('click', async () => {

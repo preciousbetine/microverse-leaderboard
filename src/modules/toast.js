@@ -5,6 +5,6 @@ const showToast = (message) => {
   setTimeout(() => {
     toast.style.display = '';
   }, 3000);
-}
+};
 
 module.exports = showToast;

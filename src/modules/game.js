@@ -2,7 +2,7 @@
 const gameID = 'xLw0Vz72706E0aKqRFgf';
 const apiBase = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 
-const getScores = async (e) => {
+const getScores = async () => {
   const games = await fetch(`${apiBase}/games/${gameID}/scores/`);
   const gamesJSON = await games.json();
   return gamesJSON.result;
