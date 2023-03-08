@@ -46,7 +46,7 @@ Microverse leaderboard project
   <summary>Client</summary>
   <ul>
     <li>HTML</li>
-    <li>CSS</li>
+    <li>SCSS</li>
     <li>Javascript</li>
     <li>Webpack</li>
   </ul>
