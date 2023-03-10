@@ -180,7 +180,7 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 <!-- > Describe 1 - 3 features you will add to the project. -->
-None for now 🙂
+None for now
 
 <!-- - [ ] **Implement site functionalities** -->
   <!-- - [ ] **[new_feature_3]** -->
@@ -213,7 +213,7 @@ If you like this project, give it a ⭐
 
 <!-- > Give credit to everyone who inspired your codebase. -->
 
-No acknowledgements 😄
+No acknowledgements
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
